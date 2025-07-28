@@ -60,7 +60,7 @@ const Home = () => {
       );
 
       const totalRequested = freshIssued.length + freshRequested.length;
-      if (totalRequested >= 5) {
+      if (totalRequested > 5) {
         alert("You can't request more than 5 books.");
         return;
       }
