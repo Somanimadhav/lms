@@ -1,0 +1,63 @@
+.manage-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff8f5;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.1);
+}
+
+.manage-title {
+  font-size: 1.5rem;
+  color: maroon;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.request-card {
+  background-color: white;
+  border-left: 5px solid maroon;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.request-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 10px rgba(128, 0, 0, 0.15);
+}
+
+.request-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: white;
+  margin-left: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.accept-btn {
+  background-color: #388e3c;
+}
+
+.accept-btn:hover {
+  background-color: #2e7d32;
+}
+
+.reject-btn {
+  background-color: #d32f2f;
+}
+
+.reject-btn:hover {
+  background-color: #b71c1c;
+}

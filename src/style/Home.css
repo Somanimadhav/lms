@@ -1,0 +1,150 @@
+
+.home-bg {
+  min-height: 100vh;
+  background-color: #f5f5dc;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-title {
+  color: #800000;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+
+.book-card {
+  background-color: #800000;
+  color: #f5f5dc;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card.opacity-50 {
+  opacity: 0.5;
+}
+
+
+.book-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.book-author {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.book-description {
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fdf6e3;
+}
+
+.book-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.issue-btn,
+.return-btn {
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+
+.issue-btn {
+  background-color: #f5f5dc;
+  color: #800000;
+  border: none;
+}
+
+.issue-btn:hover {
+  background-color: #e0d6b9;
+}
+
+.return-btn {
+  background-color: transparent;
+  color: #f5f5dc;
+  border: 2px solid #f5f5dc;
+}
+
+.return-btn:hover {
+  background-color: #a52a2a;
+}
+
+
+.bg-maroon {
+  background-color: #800000;
+}
+
+.bg-maroon-dark {
+  background-color: #660000;
+}
+
+.bg-beige {
+  background-color: #fdf6e3;
+}
+
+.text-maroon {
+  color: #800000;
+}
+
+.book-form {
+  background-color: #fff5f5;
+  border: 2px solid maroon;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 420px;
+  box-shadow: 0 4px 10px rgba(128, 0, 0, 0.1);
+}
+
+.book-form input {
+  width: 90%;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #f5f5dc;
+  transition: 0.3s;
+}
+
+.book-form input:focus {
+  border-color: maroon;
+  outline: none;
+  background-color: #fff0f0;
+}
